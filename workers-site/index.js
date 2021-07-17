@@ -33,7 +33,7 @@ async function handleEvent(event) {
         }
         // ユーザ,パスワードが正しいか?
         if (user !== BASIC_USER || pass !== BASIC_PASS) {
-          return createBasicAuthRequiredResponse(error)
+          return createBasicAuthRequiredResponse("Invalid user.")
         }
       } else {
         return createBasicAuthRequiredResponse("Authentication required.")
