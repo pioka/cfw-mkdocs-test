@@ -1,7 +1,13 @@
+# Cloudflare Workers config
+
 name = "cfw-mkdocs-test"
-type = "javascript"
+type = "webpack"
 
 account_id = ""
 workers_dev = true
 route = ""
 zone_id = ""
+
+[site]
+bucket = "./site"
+entry-point = "./workers-site"
